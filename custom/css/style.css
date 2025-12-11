@@ -1,0 +1,265 @@
+@charset "UTF-8"; /* 文字コード指定 */
+
+* {
+  box-sizing: border-box; /* 枠の計算方法を統一 */
+  margin: 0; /* 余白リセット */
+  padding: 0; /* 内側余白リセット */
+}
+
+body {
+  background: #eee; /* 背景色 */
+  font-family: "Inter", sans-serif; /* 文字フォント */
+  font-size: 16px; /* 文字サイズ */
+  line-height: 24px; /* 行間 */
+  color: #000; /* 文字色 */
+}
+
+/***** Header *****/
+header {
+  width: 100%; /* 横幅いっぱい */
+  padding: 20px 0; /* 上下余白 */
+  background: #eee; /* 背景色 */
+}
+
+.header-inner {
+  width: 1000px; /* 固定幅 */
+  margin: 0 auto; /* 中央揃え */
+  display: flex; /* 横並び */
+  justify-content: space-between; /* 両端配置 */
+  align-items: center; /* 縦位置を揃える */
+}
+
+.logo {
+  font-family: "Pacifico", cursive; /* ロゴのフォント */
+  font-size: 24px; /* ロゴ文字サイズ */
+  font-weight: normal; /* 太さ */
+  color: #000; /* 色 */
+  text-decoration: none; /* 下線なし */
+}
+
+nav {
+  display: flex; /* 横並び */
+  gap: 40px; /* 項目間スペース */
+  align-items: center; /* 縦位置を揃える */
+}
+
+nav a {
+  font-size: 16px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  color: #000; /* 色 */
+  transition: opacity .3s; /* ホバー時のアニメ */
+}
+
+nav a:hover {
+  opacity: .7; /* 半透明に */
+  text-decoration: none; /* 下線なし */
+}
+
+/***** Main Visual *****/
+#main-visual {
+  width: 100%; /* 横幅いっぱい */
+  padding: 80px 0; /* 上下余白 */
+  background-color: #eee; /* 背景色 */
+}
+
+#main-visual .inner {
+  width: 1200px; /* 固定幅 */
+  margin: 0 auto; /* 中央配置 */
+  display: flex; /* 横並び */
+  justify-content: space-between; /* 両端寄せ */
+  align-items: center; /* 縦位置中央揃え */
+  gap: 40px; /* 要素間スペース */
+}
+
+#main-visual .text {
+  display: flex; /* 縦並び */
+  flex-direction: column; /* 縦方向 */
+  gap: 20px; /* 行間スペース */
+  width: 300px; /* テキスト幅 */
+}
+
+#main-visual .logo {
+  font-family: "Pacifico", cursive; /* フォント */
+  font-size: 96px; /* 大きなロゴ */
+  font-weight: normal; /* 太さ */
+  line-height: normal; /* 行高デフォルト */
+  color: #000; /* 色 */
+}
+
+#main-visual p {
+  font-size: 16px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: 24px; /* 行間 */
+  color: #000; /* 色 */
+}
+
+
+#main-visual img {
+  width: 800px; /* 画像幅 */
+  height: 600px; /* 画像高さ */
+  background-color: #ccc; /* 仮背景 */
+  object-fit: cover; /* トリミング調整 */
+}
+
+/***** Section（共通） *****/
+section {
+  width: 100%; /* 横幅いっぱい */
+  padding: 80px 0; /* 上下余白 */
+}
+
+.sec-heading {
+  font-size: 32px; /* 見出しサイズ */
+  font-weight: bold; /* 太字 */
+  line-height: normal; /* 行間 */
+  color: #000; /* 色 */
+  margin-bottom: 40px; /* 下余白 */
+}
+
+/***** Section 1 *****/
+#sec-1 {
+  background-color: #f5f5f5; /* 背景色 */
+}
+
+#sec-1 .inner {
+  width: 1000px; /* 固定幅 */
+  margin: 0 auto; /* 中央揃え */
+  display: flex; /* 横並び */
+  gap: 40px; /* 要素間 */
+  justify-content: space-between; /* 両端寄せ */
+  flex-wrap: wrap; /* 折返し有効 */
+}
+
+#sec-1 .sec-heading {
+  width: 100%; /* 横幅全部 */
+  margin-bottom: 60px; /* 下余白 */
+}
+
+#sec-1 .text {
+  width: 550px; /* テキスト幅 */
+  display: flex; /* 縦並び */
+  flex-direction: column; /* 縦方向 */
+  gap: 40px; /* 行間 */
+}
+
+#sec-1 .text p {
+  font-size: 16px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: 24px; /* 行間 */
+  color: #000; /* 色 */
+}
+
+#sec-1 img {
+  width: 400px; /* 画像幅 */
+  height: 533px; /* 画像高さ */
+  background-color: #ccc; /* 仮背景 */
+  object-fit: cover; /* トリミング調整 */
+}
+
+/***** Section 2 *****/
+#sec-2 {
+  background-color: #eee; /* 背景色 */
+  position: relative; /* 絶対配置の基準 */
+}
+
+#sec-2 .inner {
+  width: 1200px; /* 固定幅 */
+  margin: 0 auto; /* 中央揃え */
+  position: relative; /* 見出し位置の基準 */
+}
+
+#sec-2 p {
+  width: 500px; /* テキスト幅 */
+  margin-bottom: 20px; /* 下余白 */
+  font-size: 16px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: 24px; /* 行間 */
+  color: #000; /* 色 */
+}
+
+#sec-2 img {
+  width: 100%; /* 横幅いっぱい */
+  height: 400px; /* 高さ */
+  background-color: #ccc; /* 仮背景 */
+  object-fit: cover; /* トリミング */
+  margin-bottom: 20px; /* 下余白 */
+}
+
+#sec-2 .sec-heading {
+  position: absolute; /* 絶対配置 */
+  top: .25em; /* 上位置 */
+  right: -1em; /* 右位置 */
+  font-size: 64px; /* 大見出し */
+  font-weight: bold; /* 太字 */
+  line-height: normal; /* 行間 */
+  color: #000; /* 色 */
+  white-space: nowrap; /* 改行しない */
+}
+
+/***** Section 3 *****/
+#sec-3 {
+  background-color: #eee; /* 背景色 */
+}
+
+#sec-3 .inner {
+  width: 1000px; /* 固定幅 */
+  margin: 0 auto; /* 中央揃え */
+  display: flex; /* 横並び */
+  gap: 40px; /* 間隔 */
+  justify-content: space-between; /* 両端寄せ */
+  flex-wrap: wrap; /* 折返し可 */
+}
+
+#sec-3 .sec-heading {
+  width: 100%; /* 横幅全部 */
+  margin-bottom: 60px; /* 下余白 */
+  text-align: center; /* 中央揃え */
+}
+
+#sec-3 figure {
+  width: 200px; /* 幅 */
+  display: flex; /* 縦並び */
+  flex-direction: column; /* 縦方向 */
+  gap: 20px; /* 行間 */
+}
+
+#sec-3 figure img {
+  width: 200px; /* 画像幅 */
+  height: 200px; /* 画像高さ */
+  background-color: #ccc; /* 仮背景 */
+  object-fit: cover; /* トリミング調整 */
+}
+
+#sec-3 figcaption {
+  font-size: 16px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: 24px; /* 行間 */
+  color: #000; /* 色 */
+}
+
+/***** Footer *****/
+footer {
+  width: 100%; /* 横幅いっぱい */
+  padding: 20px 0; /* 上下余白 */
+  background-color: #666; /* 背景 */
+  display: flex; /* 縦並び */
+  flex-direction: column; /* 縦方向 */
+  justify-content: center; /* 中央揃え */
+  align-items: center; /* 中央揃え */
+  gap: 20px; /* 要素間スペース */
+  text-align: center; /* 中央寄せ */
+}
+
+footer .logo {
+  font-family: "Pacifico", cursive; /* ロゴフォント */
+  font-size: 40px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: normal; /* 行間 */
+  color: #fff; /* 色 */
+}
+
+.copyright {
+  font-size: 14px; /* 文字サイズ */
+  font-weight: normal; /* 太さ */
+  line-height: normal; /* 行間 */
+  color: #fff; /* 白文字 */
+}
